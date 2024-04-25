@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) )
     exit;
 } // Exit if accessed directly
 
-class EnqueueJs 
+class FrontJs 
 {  
     use SingletonTrait;
 
@@ -30,6 +30,7 @@ class EnqueueJs
 
         $zipCodesObject = ZipCodesRetrieve::getInstance();
         $zipCodes = $zipCodesObject->getZipCodes();
+        
         LocalizeScript::localize( 'zip-code-validation', 'zipCodes', $zipCodes );
 
         wp_enqueue_script( 'zip-code-validation' );

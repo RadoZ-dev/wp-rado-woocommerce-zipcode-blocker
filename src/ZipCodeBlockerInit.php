@@ -6,7 +6,7 @@ use WoocommerceZipCodeBlocker\Helpers\SingletonTrait;
 use WoocommerceZipCodeBlocker\Setup\AddMenuPage;
 use WoocommerceZipCodeBlocker\Setup\RegisterSettings;
 use WoocommerceZipCodeBlocker\Setup\ValidateZipCode;
-use WoocommerceZipCodeBlocker\Enqueue\EnqueueJs;
+use WoocommerceZipCodeBlocker\Enqueue\FrontJs;
 
 if ( ! defined( 'ABSPATH' ) ) 
 {
@@ -27,6 +27,6 @@ class ZipCodeBlockerInit
         AddMenuPage::getInstance();
         RegisterSettings::getInstance();
         ValidateZipCode::getInstance();
-        EnqueueJs::getInstance();
+        FrontJs::getInstance();
     }
 }
