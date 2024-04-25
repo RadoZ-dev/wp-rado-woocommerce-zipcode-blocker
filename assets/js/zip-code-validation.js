@@ -1,5 +1,5 @@
 ( () => {
-  window.addEventListener( 'load', ( event ) => {
+  window.addEventListener( 'load', () => {
     const zipCodeInputField = document.getElementById( 'shipping-postcode' );
     const ZipCodeInputContainer = document.querySelector( '.wc-block-components-address-form__postcode' );
     const warning = 'Unfortunately, we don\'t ship to this location.';
